@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery | CodeAlpha Project</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <span class="logo"><i class="fa-solid fa-images"></i></span>
+      <h1>Welcome To My Image Gallery</h1>
+      <button class="darkMode" onclick="darkMode()">Dark Mode</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="categories">
+      <button onclick="filterImages('all')" class="all">All</button>
+      <button onclick="filterImages('nature')">Nature</button>
+      <button onclick="filterImages('food')">Food</button>
+      <button onclick="filterImages('clothes')">Clothes</button>
+      <button onclick="filterImages('quotes')">Dua & Quotes</button>
+    </div>
+
+    <div class="images">
+      <img src="./assets/moon.jpg" data-category="nature" alt="nature">
+      <img src="./assets/waves.jpg" data-category="nature" alt="nature">
+      <img src="./assets/cloth4.jpg"  data-category="clothes" alt="clothes">
+      <img src="./assets/nature2.jpg" data-category="nature" alt="nature">
+      <img src="./assets/pasta.jpg" data-category="food" alt="food">
+      <img src="./assets/sunset.jpg" data-category="nature" alt="nature">
+      <img src="./assets/nature3.jpg" data-category="nature" alt="nature">
+      <img src="./assets/cloth5.jpg" data-category="clothes" alt="clothes">
+      <img src="./assets/stones.jpg" data-category="nature" alt="nature">
+      <img src="./assets/view.jpg" data-category="nature" alt="nature">
+      <img src="./assets/flowers.jpg" data-category="nature" alt="nature">
+      <img src="./assets/winter-nature.jpg" data-category="nature" alt="nature">
+      <img src="./assets/quote3.jpg" data-category="quotes" alt="Quotes">
+      <img src="./assets/food.jpg" data-category="food" alt="food">
+      <img src="./assets/nature.jpg" data-category="nature" alt="nature">
+      <img src="./assets/cloth1.jpeg" data-category="clothes" alt="clothes">
+      <img src="./assets/cake.jpeg" data-category="food" alt="food">
+      <img src="./assets/quote6.jpg" data-category="quotes" alt="Quotes">
+      <img src="./assets/nature4.jpg" data-category="nature" alt="nature">
+      <img src="./assets/quote2.jpg" data-category="quotes" alt="Quotes">
+      <img src="./assets/cloth3.png" data-category="clothes" alt="clothes">
+      <img src="./assets/moon3.jpg" data-category="nature" alt="nature">
+      <img src="./assets/quote1.jpg" data-category="quotes" alt="Quotes">
+      <img src="./assets/quote4.jpg" data-category="quotes" alt="Quotes">
+      <img src="./assets/burger.webp" data-category="food" alt="food">
+      <img src="./assets/cloth2.jpg" data-category="clothes" alt="clothes">
+      <img src="./assets/quote5.jpg" data-category="quotes" alt="Quotes">
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+      <button class="closeBtn" onclick="closeLightbox()">&times;</button>
+      <img id="lightbox-img" src="">
+      <button class="prev" onclick="Previous()"><i class="fa-solid fa-play fa-flip-horizontal"></i></button>
+      <button class="next" onclick="Next()"><i class="fa-solid fa-play"></i></button>
+    </div>
+  </main>
+
+  <footer>
+    <p>📸 All photos are from my real gallery — captured and curated by me.</p>
+    <br>
+    <p> Developed by <b>Zobia Masood</b> — Image Gallery Project for <b>CodeAlpha Internship</b>.</p>
+  </footer>
+
+  <script src="apps.js"></script>
+</body>
+</html>
