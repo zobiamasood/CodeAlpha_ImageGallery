@@ -27,7 +27,7 @@ A simple, modern UI that focuses on the images without distractions.
 ---
 
 ## 🚀 Live Demo  
-🔗 [View Live on Netlify](https://zobia-imagegallery-3890b7.netlify.app)
+🔗 [https://zobia-imagegallery-84866e.netlify.app/]
 
 ---
 
@@ -35,13 +35,7 @@ A simple, modern UI that focuses on the images without distractions.
 
 - **HTML5** – for the structure  
 - **CSS3 (Flexbox & Grid)** – for styling and layout  
-- **JavaScript (ES6)** – for interactivity and dynamic filtering  
-
----
-
-## 📷 Preview
-
-[https://zobia-imagegallery-84866e.netlify.app/]
+- **JavaScript (ES6)** – for interactivity and dynamic filtering 
 
 ---
 
